@@ -1,0 +1,29 @@
+[project]
+name = 'fungible'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.enhanced-sip010-trait]
+path = 'contracts/enhanced-sip010-trait.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.fungible-token]
+path = 'contracts/fungible-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.sip010-ft-trait]
+path = 'contracts/sip010-ft-trait.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
